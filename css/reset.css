@@ -38,6 +38,15 @@ img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
+
+a {
+   text-decoration: none;
+}
+
+ul,ol {
+  list-style: none;
+}
+
 /*
   7. Remove built-in form typography styles
 */
