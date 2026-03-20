@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SyntaxWear - tenis e Sneakers online</title>
 
-   <link rel="stylesheet" href="./css/reset.css">
-   <link rel="stylesheet" href="./css/variables.css">
-   <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
-    
+
 </head>
+
 <body>
     <header class="header">
         <!-- Cabeçalho do site, com logo e navegação principal -->
-         <h1 class="logo">
+        <h1 class="logo">
             <a href="/" title="SyntaxWear - tenis e Sneakers online">
                 <img src="./logo/Logo.svg" alt="SyntaxWear - tenis e Sneakers online">
             </a>
-         </h1>
+        </h1>
 
-         <nav class="nav-center" aria-label="categorias principais">
+        <nav class="nav-center" aria-label="categorias principais">
             <ul>
                 <li><a href="#">Masculino</a></li>
                 <li><a href="#">Feminino</a></li>
                 <li><a href="#">Outlet</a></li>
             </ul>
-         </nav>
+        </nav>
 
-         <nav class="nav-right" aria-label="menu secundário">
+        <nav class="nav-right" aria-label="menu secundário">
             <ul>
                 <li><a href="#">Nossas lojas</a></li>
                 <li><a href="#">Sobre</a></li>
@@ -36,19 +38,26 @@
                 <li><a href="#"><img src="./logo/ícone (1).svg" alt=""></a></li>
                 <li><a href="#"><img src="./logo/ícone (2).svg" alt=""></a></li>
             </ul>
-         </nav>
+        </nav>
     </header>
 
-    <nav>
-        <!-- Navegação secundária ou menu de categorias -->
-    </nav>
-
     <main>
-        <section id="products">
+        <section class="hero-section">
             <!-- Seção principal para listar os produtos -->
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Krypton One</span>
+                    <h2 class="hero-title">transForme qualquer passo em presença.</h2>
+
+                    <div class="hero-buttons">
+                        <a class="btn btn-outline" href="#">Ver modelos</a>
+                        <a class="btn btn-filled" href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <aside id="filters">
+        <aside class="filters">
             <!-- Barra lateral para filtros de produtos -->
         </aside>
     </main>
@@ -57,4 +66,5 @@
         <!-- Rodapé do site -->
     </footer>
 </body>
+
 </html>
