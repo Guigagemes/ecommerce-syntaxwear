@@ -1,16 +1,16 @@
 /* ==== inicio do header ==== */
 .header {
     position: fixed;
-    top: 20px;
+    top: 60px;
     left: 50%;
     transform: translate(-50%);
-    width: calc(100% - 40px);
+    width: calc(100% - 210px);
     border-radius: 15px;
     z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.255rem 1.25rem;
+    padding: 0.265rem 1.25rem;
     background-color: #ffffff;
 }
 
@@ -60,6 +60,7 @@
 
     height: 500px;
     position: relative;
+    border-radius: 20px;
 
 }
 
@@ -188,4 +189,90 @@
 .futurista {
     background: url(../imagens/tênis\ futurista.jpg) no-repeat center;
     background-size: cover;
+}
+
+/* ==== fim dos produtos ==== */
+/* ==== inicio dos produtos Grid ==== */
+
+.card {
+    position: relative;
+    border-radius: 20px;
+}
+
+.top1 {
+    grid-area: top1;
+    background: url(../imagens/card_imagem.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.top2 {
+    grid-area: top2;
+    background: url(../imagens/tênis\ roxo\ e\ verde.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.midl {
+    grid-area: midl;
+    background: url(../imagens/b40b08e0-cedb-42e7-87f2-5a9a36728b21.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.midr {
+    grid-area: midr;
+    background: url(../imagens/tênis\ colorido.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.bottoml {
+    grid-area: bottoml;
+    background: url(../imagens/ztênis\ preto\ azul.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.bottomr {
+    grid-area: bottomr;
+    background: url(../imagens/tênis\ futurista.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: 
+    "top1 top1 top2 top2"
+    "top1 top1 midl midr"
+    "bottoml bottoml midl bottomr"
+    ;
+    gap: 30px;
+
+}
+
+.top1-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-title {
+    color: #ededed;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.cta-group {
+    display: flex;
+    gap: 12px;
 }
