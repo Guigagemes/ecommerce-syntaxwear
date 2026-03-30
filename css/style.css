@@ -175,38 +175,35 @@
     font-weight: 400;
 }
 
-.btn {
-    font-size: 1.25rem;
-    width: 161px;
-    height: 48px;
-    border-radius: 25px;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 400;
-    padding: 10px 20px;
-    transition: backgound-color 0.3s, border 0.3s;
-    line-height: 23px;
+@media (max-width:768px) {
+    .hero-section {
+        height: 660px;
+        background-image: url(../imagens/hero-mobile.jpg);
+    }
+
+    .hero-overlay {
+        padding: 0;
+    }
+
+    .hero-content .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-content .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero-content {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
 }
 
-.btn-outline {
-    border: 2px solid #ffffff;
-    background-color: transparent;
 
-
-}
-
-.btn-filled {
-    background-color: #ffffff;
-    color: #6329A2;
-
-
-}
-
-.btn:hover {
-    background-color: #6329A2;
-    border: #6329A2;
-    color: #ffffff;
-}
 
 /* ==== fim do hero ==== */
 /* ==== inicio dos produtos ==== */
@@ -268,6 +265,13 @@
     background: url(../imagens/tênis\ futurista.jpg) no-repeat center;
     background-size: cover;
 }
+
+@meida (max-width:500px) {
+   .category-card {
+    width: 100%;
+   } 
+}
+
 
 /* ==== fim dos produtos ==== */
 /* ==== inicio dos produtos Grid ==== */
@@ -355,6 +359,41 @@
     gap: 0.75rem;
 }
 
+@media (max-width: 768px) {
+    .grid-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "top1 top1"
+        "bottoml bottoml"
+        "midl midr"
+        "midl bottomr"
+        "top2 top2";
+        max-width: 100%;
+        gap: 0.625rem;
+    }
+
+    .top1 {
+        min-height: 500px;
+    }
+
+    .midl {
+        min-height: 370px;
+    }
+
+    .midr {
+        min-height: 190px;
+    }
+
+    .top2 {
+        min-height: 190px;
+    }
+
+    .bottomr, .bottoml{
+        min-height: 190px;
+    }
+}
+
 /* ==== fim dos produtos Grid ==== */
 /* ==== inicio do footer ==== */
 
@@ -429,4 +468,24 @@
     font-size: 1.25rem;
     text-align: center;
     padding: 20px 0;
+}
+
+@media (max-width: 1000px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 2rem 1rem;  
+    }
+
+    .social-links ul {
+        gap: 1rem;
+        margin-bottom: 40px;
+    }
+
+    .footer-col ul li {
+        margin: 0;
+    }
+
+
 }
